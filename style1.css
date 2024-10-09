@@ -1,0 +1,2055 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Figtree", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    /* text-wrap: balance; */
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ffffff;
+    --blueclr: #3773fe;
+    --regularFont: 1.9rem;
+    --headingFont: 54px;
+    --ffPrimary: "Nunito", sans-serif;
+    --ffSecondary: "Merienda", cursive;
+    --h2: 3.35rem;
+    --h2wt: 700;
+    ---b: #272foe;
+    --lbbg: #f0f8ff;
+    --greybg: #f6f6f6;
+
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 4rem;
+}
+
+.componentSpacingnav {
+    padding: 1.7rem 0;
+}
+
+.componentSpacing {
+    padding: 5rem 4rem;
+}
+
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflexCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.dflexstart {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dflexColleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dflexend {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grid2nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid31 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.grid21 {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid4,
+.grid4country,
+.grid4team {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid4c {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/* project standard classes Ends */
+/* --------------header starts here-------------- */
+/* nav codes */
+.navContainer {
+    /* background-color: #ff0f00; */
+}
+
+.navBar {
+    /* background-color: #ff0f00; */
+}
+
+.navBody {
+    /* background-color: #ff0f00; */
+}
+
+.navHeadLogo {
+    /* background-color: #ff0f00; */
+}
+
+.navHeadLogo img {
+    /* background-color: #ff0f00; */
+    height: 7.7rem;
+    width: auto;
+}
+
+.contactButtons {
+    /* background-color: #ff0f00; */
+}
+
+.contactButtons button {
+    /* background-color: #ff0f00; */
+
+}
+
+.number {
+    background-color: var(--blueclr);
+    border: #3773fe;
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1.25rem 2.5rem;
+    color: var(--lightColor);
+}
+
+.number:hover {
+    background-color: var(--lightColor);
+    border: 0.1rem solid var(--blueclr);
+    color: var(--blueclr);
+}
+
+.number a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--lightColor);
+}
+
+.number:hover a {
+    color: var(--blueclr);
+}
+
+.number i {
+    /* background-color: #ff0f00; */
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.talk {
+    background-color: var(--lightColor);
+    border: 0.1rem solid var(--blueclr);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1.25rem 2.5rem;
+}
+
+.talk:hover {
+    background-color: var(--blueclr);
+    color: var(--lightColor);
+}
+
+.talk a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--blueclr);
+}
+
+.talk:hover a {
+    color: var(--lightColor);
+}
+
+.talk i {
+    background-color: var(--blueclr);
+    font-size: 0.81rem;
+    padding: 0.6rem;
+    border-radius: 1rem;
+    color: var(--lightColor);
+    margin-left: 0.5rem;
+}
+
+.talk:hover i {
+    background-color: var(--lightColor);
+    color: var(--blueclr);
+}
+
+/* nav codes */
+/* heroCodes */
+.heroContainer {
+    /* background-color: #ff0f00; */
+    background-image: url(./assets/images/banner-img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+
+}
+
+.heroSection {
+    /* background-color: #ff0f00; */
+    padding: 7rem 4rem;
+}
+
+.heroBody {
+    /* background-color: #ff0f00; */
+    /* padding: 7rem 4rem; */
+}
+
+.heroJumbotron {
+    /* background-color: #ff0f00; */
+}
+
+.box {
+    background-color: rgba(157, 153, 153, 0.2);
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.4rem 1rem;
+    border-radius: 0.6rem;
+    margin-bottom: 4rem;
+
+
+}
+
+.heroJumbotron h1 {
+    /* background-color: #ff0f00; */
+    font-size: 7rem;
+    font-weight: 600;
+    line-height: 7rem;
+
+}
+
+.heroJumbotron p {
+    /* background-color: #ff0f00; */
+    margin: 3rem 0 4rem;
+    font-size: 2.2rem;
+    line-height: 4rem;
+    color: #fffffccc;
+
+}
+
+.heroJumbotron button {
+    background-color: var(--blueclr);
+    /* margin: 2rem 0 0; */
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    color: var(--lightColor);
+    border: none;
+}
+
+.heroJumbotron button a {
+    /* background-color: #ff0f00; */
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--lightColor);
+}
+
+.heroJumbotron button a i {
+    background-color: var(--lightColor);
+    font-size: 1rem;
+    color: var(--blueclr);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.heroJumbotron button:hover {
+    background-color: var(--lightColor);
+    border: 0.1rem solid var(--blueclr);
+    color: #3773fe;
+}
+
+.heroJumbotron button:hover a {
+    color: var(--blueclr);
+}
+
+.heroJumbotron button:hover i {
+    background-color: var(--blueclr);
+    color: #ffffff;
+}
+
+/* heroCodes */
+/* --------------header ends here-------------- */
+/* ---------------main starts here--------------- */
+/* vision codes */
+
+.visionContainer {
+    background-color: var(--greybg);
+}
+
+.ourVision {
+    /* background-color: #ff0f00; */
+}
+
+.visionBody {
+    
+    /* background-color: #ff0f00; */
+}
+
+.visionText {
+    /* background-color: #ff0f00; */
+
+}
+
+.visionText h2 {
+    /* background-color: #ff0f00; */
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+
+}
+
+.visionJumbotron {
+    /* background-color: #ff0f00; */
+    margin-top: 3rem;
+    gap: 13rem;
+
+}
+
+.visionJumbotron h2 {
+    /* background-color: #ff0f00; */
+    font-size: 3.4rem;
+    font-weight: var(--h2wt);
+}
+
+.visionJumbotron p {
+    /* background-color: #ff0f00; */
+    margin-top: 1rem;
+    font-size: var(--regularFont);
+    line-height: 3rem;
+}
+
+/* vision codes */
+/* mission codes */
+.missionContainer {
+    /* background-color: #ff0f00; */
+}
+
+.ourMission {
+    /* background-color: #ff0f00; */
+}
+
+.missionHeadingBody {
+    /* background-color: #ff0f00; */
+}
+
+
+.missionHeading h2 {
+    /* background-color: #ff0f00; */
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+}
+
+
+
+.mission {
+    /* background-color: #ff0f00; */
+    margin-top: 4rem;
+    gap: 13rem;
+
+}
+
+.mission h2 {
+    /* background-color: #ff0f00; */
+    font-size: 4rem;
+    font-weight: var(--h2wt);
+    margin-right: 3rem;
+}
+
+.mission p {
+    /* background-color: #ff0f00; */
+    margin-top: 1rem;
+    font-size: var(--regularFont);
+    line-height: 3rem;
+}
+
+.serviceContainer {
+    /* padding: 0 2rem; */
+    background-color: var(--greybg);
+    
+}
+
+.service {
+    /* background-color: #0b75ff; */
+    padding-left: 13rem;
+    padding-right: 13rem;
+}
+
+.serviceBody {
+    /* background-color: #ff0f00; */
+    /* margin-top: 8rem; */
+}
+
+.serviceHeading h2 {
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+}
+
+.serviceCardss {
+    padding-top: 4rem;
+    /* background-color: #1E90FF; */
+    /* gap: 2.77rem; */
+}
+.serviceCard:hover{
+    margin-top: 0rem ;
+    z-index: +9;
+    transition: 0.61s;
+}
+.serviceCard {
+    margin: 1.5rem;
+    /* background-color: #ff0f00; */
+    background-color: var(--lightColor);
+    /* margin: 1.5rem; */
+    border-radius: 1.5rem;
+    padding: 4rem;
+}
+
+.serviceCard:hover {
+      background-color: #0b75ff;
+    color: var(--lightColor);
+    margin-top: 0rem ;
+    z-index: +9;
+    transition: 0.61s;
+}
+
+.serviceCard:hover a {
+    color: var(--lightColor);
+}
+
+.cardHead {
+    /* background-color: #ff0f00; */
+    width: 29%;
+    aspect-ratio: 1/1;
+}
+
+.cardHead img {
+    /* background-color: #ff0f00; */
+}
+
+.cardJumbotron {
+    /* background-color: #ff0f00; */
+    margin-top: 2.5rem;
+}
+
+.cardJumbotron h3 {
+    /* background-color: #ff0f00; */
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cardJumbotron p {
+    /* background-color: #ff0f00; */
+    font-size: 1.7rem;
+    margin-top: 2rem;
+}
+
+.cardJumbotron h5 {
+    /* background-color: #ff0f00; */
+    margin-top: 2rem;
+}
+
+.cardJumbotron h5 a {
+    /* background-color: #ff0f00; */
+    text-decoration: none;
+    color: var(--blueclr);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.cardJumbotron h5 a i {
+    /* background-color: #ff0f00; */
+    margin-left: 0.7rem;
+    color: var(--darkColor);
+    font-size: 1rem;
+}
+
+.cardJumbotron h5 a :hover {
+    color: var(--lightColor);
+}
+
+.moreButton {
+    /* background-color: #ff0f00; */
+}
+
+.moreButton button {
+    /* background-color: #ff0f00; */
+    background-color: var(--blueclr);
+    margin: 3rem 0 0;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    color: var(--lightColor);
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+    border: none;
+
+}
+
+.moreButton button a {
+    /* background-color: #ff0f00; */
+    text-decoration: none;
+    color: var(--lightColor);
+}
+
+.moreButton button a i {
+    /* background-color: #ff0f00; */
+    background-color: var(--lightColor);
+    font-size: 1rem;
+    color: var(--blueclr);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+
+}
+
+.moreButton button:hover {
+    background-color: var(--lightColor);
+    border: 0.1rem solid var(--blueclr);
+    color: #3773fe;
+}
+
+.moreButton button:hover a {
+    border: none;
+    color: var(--blueclr);
+
+
+}
+
+.moreButton button:hover i {
+    background-color: var(--blueclr);
+    color: #ffffff;
+}
+
+/* mission codes */
+
+/* who we are codes */
+.whoContainer {
+    /* background-color: #ff0f00; */
+}
+
+.who {
+    /* background-color: #ff0f00; */
+}
+
+.whoBody {
+    /* background-color: #ff0f00; */
+}
+
+.whoHeading {
+    /* background-color: #1E90FF; */
+}
+
+.whoHeading h2 {
+    /* background-color: #1E90FF; */
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+    margin-bottom: 4rem;
+}
+.whoContentBody{
+    gap: 4rem;
+}
+.whoJumbotron {
+    /* background-color: #ff0f00; */
+}
+
+
+
+.whoJumbotron h2 {
+    /* background-color: #ff0f00; */
+    font-size: 4rem;
+    font-weight: var(--h2wt);
+}
+
+.whoJumbotron h3 {
+    /* background-color: #ff0f00; */
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 3rem 0 2rem;
+}
+
+.whoJumbotron p {
+    /* background-color: #ff0f00; */
+    font-size: var(--regularFont);
+    margin-bottom: 2rem;
+}
+
+/* .whoJumbotron button {
+    background-color: #ff0f00;
+} */
+
+.whoImage {
+    /* background-color: #ff0f00; */
+
+}
+
+.whoImage img {
+    /* background-color: #ff0f00; */
+    padding: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+    aspect-ratio: 1/1;
+}
+
+/* who we are codes */
+/* client codes */
+.clientContainer {
+    background-color: var(--greybg);
+}
+
+.client {
+    /* background-color: #ff0f00; */
+}
+
+.clientBody {
+    /* background-color: #ff0f00; */
+}
+
+.clientHead {
+    /* background-color: #ff0f00; */
+}
+
+.clientHead h2 {
+    /* background-color: #ff0f00; */
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+    padding-bottom: 3rem;
+    /* color: #0080ff; */
+}
+
+.clientLogo {
+    /* background-color: #ff0f00; */
+    /* gap: 2rem; */
+
+
+
+}
+
+.clientImage {
+    /* background-color: #d1c5c4; */
+
+    width: 75%;
+    aspect-ratio: 1/1;
+
+
+}
+
+.img1 {
+    padding: 2rem;
+    margin-bottom: 6rem;
+}
+
+.img2 {
+    
+}
+
+.img3 {
+    padding: 7rem 2rem 2rem 2rem;
+    margin-left: 2rem;
+}
+
+.img4 {
+    padding: 4rem;
+}
+
+.clientImage img {
+    /* margin-top: 2rem; */
+}
+
+/* client codes */
+/* discount codes */
+.discountContainer {
+    background-color: var(--greybg);
+
+
+
+
+}
+
+.discount {
+    /* background-color: #ff0f00; */
+    background-image: linear-gradient(to right, #52a5f8, #026ada);
+    margin: 0 11rem;
+    border-radius: 2rem;
+}
+
+.discountBody {
+    /* background-color: #ff0f00; */
+
+}
+
+.discoutJumbotron {
+    /* background-color: #ff0f00; */
+    padding: 2rem;
+}
+
+.discoutJumbotron h2 {
+    /* background-color: #ff0f00; */
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: var(--lightColor);
+}
+
+.discoutJumbotron p {
+    /* background-color: #ff0f00; */
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    color: var(--lightColor);
+}
+
+/* .moreButton */
+.moreButton2 {
+    /* background-color: #330300; */
+}
+
+.moreButton2 button {
+    /* background-color: #ff0f00; */
+    background-color: var(--lightColor);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    color: var(--blueclr);
+
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 400;
+
+    border: none;
+
+}
+
+.moreButton2 button a {
+    /* background-color: #ff0f00; */
+    text-decoration: none;
+    color: var(--blueclr);
+}
+
+.moreButton2 button a i {
+    /* background-color: #ff0f00; */
+    background-color: #1E90FF;
+    font-size: 0.9rem;
+    color: var(--lightColor);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    /* display: flex;
+    flex-direction: column; */
+    /* align-items: center;
+    justify-content: center;
+    text-align: center; */
+
+}
+
+.moreButton2 button:hover {
+    background-color: #1E90FF;
+    border: none;
+    border: 0.1rem solid var(--lightColor);
+}
+
+.moreButton2 :hover a {
+    background-color: #1E90FF;
+    color: #ffffff;
+}
+
+
+
+.moreButton2 button:hover i {
+    background-color: var(--lightColor);
+    color: #1E90FF;
+}
+
+/* discount codes */
+/* country codes */
+.countryContainer {
+    background-color: var(--greybg);
+}
+
+.country {
+    /* background-color: #ff0f00; */
+}
+
+.countryBody {
+    /* background-color: #ff0f00; */
+}
+
+.countryCard {
+    /* background-color: #ff0f00; */
+}
+
+.countryCard h2 {
+    /* background-color: #ff0f00; */
+    font-size: 6rem;
+    font-weight: 500;
+}
+
+.countryCard h2 span {
+    color: var(--blueclr);
+}
+
+.countryCard p {
+    /* background-color: #ff0f00; */
+    font-size: 1.7rem;
+}
+
+/* country codes */
+/* team codes */
+.teamContainer {
+    background-color:var(--lightColor);
+}
+
+.team {
+    /* background-color: #ff0f00; */
+}
+
+.teamBody {
+    /* background-color: #ff0f00; */
+}
+
+.teamHead {
+    /* background-color: #ff0f00; */
+    /* padding-bottom: 2rem; */
+}
+
+.teamHead h2 {
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+}
+
+.teamHeading {
+    /* background-color: #ff0f00; */
+    padding: 2rem 0 3rem 0;
+}
+
+.teamHeading h2 {
+    /* background-color: #ff0f00; */
+    font-size: 4rem;
+    font-weight: var(--h2wt);
+
+}
+
+.teamHeading p {
+    /* background-color: #ff0f00; */
+    font-size: var(--regularFont);
+    margin-top: 1rem;
+}
+
+.teamImages {
+    /* background-color: #ff0f00; */
+    gap: 2rem;
+
+}
+
+.teamCard {
+    background-color: var(--lightColor);
+
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.teamPic {
+    /* background-color: #ff0f00; */
+
+}
+
+.teamPic img {
+    /* background-color: #ff0f00; */
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.teamCardBody {
+    /* background-color: #1E90FF; */
+    padding: 2rem;
+
+
+
+}
+
+.teamCardBody h5 {
+    /* background-color: #ff0f00; */
+    font-size: 1.9rem;
+    font-weight: 500;
+}
+
+.teamCardBody p {
+    /* background-color: #ff0f00; */
+    font-size: 1.6rem;
+}
+
+/* .moreButton */
+/* team codes */
+/* blog codes */
+.blogContainer {
+    background-color:var(--greybg);
+}
+
+.blog {
+    /* background-color: #ff0f00; */
+}
+
+.blogBody {
+    /* background-color: #ff0f00; */
+}
+
+.blogHead h2 {
+    font-size: var(--h2);
+    font-weight: var(--h2wt);
+
+}
+
+.blogJumbotron {
+    /* background-color: #ff0f00; */
+    /* padding: 1rem 0 4rem; */
+    padding: 2rem 0 3rem 0;
+
+}
+
+/* .boxHead */
+.blogJumbotron h2 {
+    /* background-color: #ff0f00; */
+    font-size: 4rem;
+    font-weight: var(--h2wt);
+}
+
+.blogJumbotron p {
+    /* background-color: #ff0f00; */
+    font-size: var(--regularFont);
+    margin-top: 1rem;
+}
+
+/* .moreButton */
+/* blog codes */
+/* training codes */
+.trainingContainer {
+    /* background-color: #1E90FF; */
+    background-image: linear-gradient(to right, #52a5f8, #006eff);
+}
+
+.training {
+    /* background-color: #ff0f00; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.trainingBody {
+    /* background-color: #ff0f00; */
+}
+
+.trainingJumbotron {
+    /* background-color: #ff0f00; */
+    color: var(--lightColor);
+    align-items: flex-start;
+}
+
+.trainingJumbotron h2 {
+    /* background-color: #ff0f00; */
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.trainingJumbotron p {
+    /* background-color: #ff0f00; */
+    font-size: var(--regularFont);
+    margin-top: 2rem;
+
+    /* font-weight: 900; */
+}
+
+
+.trainingJumbotron button {
+    /* background-color: #ff0f00; */
+    background-color: var(--lightColor);
+    border: 0.1rem solid var(--blueclr);
+    border-radius: 1rem;
+    margin: 0.5rem;
+    padding: 1.25rem 2.5rem;
+    margin-top: 3rem;
+}
+
+.trainingJumbotron button:hover {
+    background-color: var(--blueclr);
+
+    color: var(--lightColor);
+}
+
+.trainingJumbotron button a {
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: var(--blueclr);
+}
+
+.trainingJumbotron button:hover a {
+    color: var(--lightColor);
+}
+
+.trainingJumbotron button i {
+    background-color: var(--blueclr);
+    font-size: 0.9rem;
+    font-weight: 900;
+    padding:0.6rem;
+    border-radius: 50%;
+    color: var(--lightColor);
+    margin-left: 0.5rem;
+    /* margin-bottom: 1rem; */
+}
+
+.trainingJumbotron button:hover i {
+    background-color: var(--lightColor);
+    color: var(--blueclr);
+}
+
+.trainingImage {
+    /* background-color: #1E90FF; */
+    width: 60%;
+    aspect-ratio: 9/16;
+
+
+}
+
+.trainingImage img {
+    /* background-color: #1E90FF; */
+    /* height: 20%;
+    width: auto; */
+
+}
+
+/* training codes */
+/*---------------- main ends here------------------ */
+/* -----------------footer starts here--------------- */
+/* contact codes */
+.contactContainer {
+    /* background-color: #ff0f00; */
+}
+
+.contact {
+    /* background-color: #ff0f00; */
+
+}
+
+.contactBody {
+
+    /* background-color: #ff0f00; */
+}
+
+.contactactHeadBody {
+    /* background-color: #ff0f00; */
+    padding-bottom: 0rem;
+
+}
+
+.contactOnline {
+    /* background-color: #ff0f00; */
+}
+
+.logo {
+    /* background-color: #ff0f00; */
+}
+
+.logo img {
+    /* background-color: #ff0f00; */
+    height: 8rem;
+    width: auto;
+}
+
+.contactOnline p {
+    /* background-color: #ff0f00; */
+    font-size: 1.7rem;
+    margin: 3rem 0;
+}
+
+.contactIcons {
+    /* background-color: #ff0f00; */
+    list-style-type: none;
+    justify-content: flex-start;
+    gap: 0.3rem;
+}
+
+.contactIcons i {
+    /* background-color: #ff0f00; */
+    /* font-size: 3rem; */
+}
+
+.fa-facebook {
+    font-size: 2rem;
+    color: var(--lightColor);
+    background-color: #0b75ff;
+    padding: 0.9rem;
+    border-radius: 2rem;
+}
+
+.fa-instagram {
+    font-size: 2rem;
+    color: var(--lightColor);
+    background-color: #dd11a3;
+    padding: 0.9rem;
+    border-radius: 2rem;
+    margin: 0 0.7rem;
+}
+
+.fa-telegram {
+    font-size: 3.8rem;
+    /* color: var(--lightColor); */
+    /* background-color: #358bfc; */
+    /* background-color: var(--lightColor); */
+    color: #74C0FC;
+    padding: 0.9rem 0rem;
+
+    border-radius: 2rem;
+    margin-bottom: 0rem;
+
+}
+
+
+
+
+.ourServices {
+    /* background-color: #b1524b; */
+    margin-bottom: 13.1rem;
+
+}
+
+.ourServices h4 {
+    font-size: 2.2rem;
+    font-weight: 600;
+    padding-right: 12rem;
+    /* margin-bottom: 1rem; */
+
+    /* margin-right: 5rem; */
+    /* background-color: #74C0FC; */
+}
+
+.contactList {
+    /* background-color: #ff0f00; */
+    list-style-type: none;
+    /* margin-top: 1rem; */
+
+}
+
+.contactList li {
+    /* background-color: #ff0f00; */
+    /* margin: 0.3rem 0; */
+    padding-top: 1rem;
+}
+
+.contactList li a {
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 1.6rem;
+
+
+}
+
+.company {
+    /* background-color: #ff0f00; */
+    margin-bottom: 18.3rem;
+}
+
+.company h4 {
+    /* background-color: #0b75ff; */
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+
+
+.company ul {
+    /* background-color: #847271; */
+    list-style-type: none;
+    margin-top: 1.4rem;
+
+}
+
+.company ul li {
+    /* background-color: #ff0f00; */
+    margin: 0.3rem 0;
+}
+
+.company ul li a {
+    text-decoration: none;
+    color: var(--darkColor);
+    font-size: 1.6rem;
+
+
+}
+
+.getInTouch {
+    /* background-color: #ff0f00; */
+}
+
+.getInTouch h4 {
+    /* background-color: #ff0f00; */
+    font-size: 2.2rem;
+    font-weight: 600;
+
+}
+
+.details {
+    /* background-color: #ff0f00; */
+}
+
+.adress {
+    /* background-color: #ff0f00; */
+    margin-top: 1rem;
+}
+
+.adress i {
+    /* background-color: #ff0f00; */
+    color: var(--blueclr);
+    font-size: 1.8rem;
+margin: 0 1rem 7rem 0;
+}
+
+.adress p {
+    /* background-color: #ff0f00; */
+    font-size: 1.6rem;
+}
+
+.contactNo {
+    /* background-color: #ff0f00; */
+    margin-top: 1rem;
+}
+
+
+.contactNo i {
+    /* background-color: #ff0f00; */
+    color: var(--blueclr);
+    font-size: 1.8rem;
+    /* margin-top: 1rem; */
+    margin: 0 1rem 1.5rem 0;
+}
+
+.contactNo p {
+    /* background-color: #ff0f00; */
+    font-size: 1.6rem;
+}
+
+.mail {
+    /* background-color: #ff0f00; */
+    margin-top: 1rem;
+}
+
+.mail i {
+    /* background-color: #ff0f00; */
+    background-color: var(--blueclr);
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: var(--lightColor);
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin: 0 1rem 4rem 0;
+}
+
+.mail p {
+    /* background-color: #ff0f00; */
+    font-size: 1.6rem;
+}
+
+.copyRight {
+    /* background-color: #dd11a3; */
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-top: 0.00001rem solid rgb(241, 238, 238);
+}
+
+.copyRight p {
+    /* padding-left: 16.7rem; */
+}
+
+/* contact codes */
+
+/* ---------------footer ends here--------------- */
+/* -------------------------------media queries------------------- */
+@media(width<=576px) {
+
+    .grid4,
+    .grid4country,
+    .grid4team,
+    .grid2,
+    .grid3,
+    .grid21,
+    .grid31 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid4c {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentSpacingnav,
+    .blogJumbotron {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 2rem 2rem;
+    }
+
+    .serviceContainer {
+        padding: 0rem;
+    }
+
+    .navHeadLogo img,
+    .logo img {
+        height: 5rem;
+    }
+    .service {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .serviceCard{
+        margin: 0;
+    }
+    .number,
+    .talk {
+         padding: 0.7rem 0.8rem; 
+        width: max-content;
+        display: none;
+        margin: 0.2rem;
+    }
+
+    .number a,
+    .number i,
+    .talk a,
+    .talk i,
+    .box {
+        font-size: 1.2rem;
+
+    }
+
+
+    .heroJumbotron h1,
+    .trainingJumbotron h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+
+    }
+    .visionJumbotron,.mission,.whoContentBody{
+        gap: 0rem;
+    }
+    .heroJumbotron p,
+    .visionJumbotron p,
+    .mission p,
+    .whoJumbotron p,
+    .teamHeading p,
+    .blogJumbotron p {
+
+        margin: 2rem 0 3rem;
+        font-size: 1.7rem;
+        line-height: 3rem;
+        }
+
+    .heroJumbotron button,
+    .moreButton button,
+    .clientHead h2,
+    .discoutJumbotron,
+    .moreButton2 button,
+    .countryCard,
+    .trainingJumbotron button {
+        padding: 1rem;
+        margin-bottom: 2rem;
+
+
+    }
+
+    .heroJumbotron button a,
+    .moreButton button a,
+    .moreButton2 button a,
+    .teamCardBody p,
+    .trainingJumbotron button a,
+    .fa-facebook,
+    .fa-instagram,
+    .contactList li a,
+    .adress p,
+    .contactNo p,
+    .mail p {
+
+        font-size: 1.4rem;
+    }
+
+    .heroJumbotron button a i,.talk i,
+    .moreButton button a i,
+    .moreButton2 button a i,
+    .trainingJumbotron button i {
+        font-size: 0.7rem;
+        padding: 0.4rem;
+
+    }
+
+    .visionJumbotron h2,
+    .mission h2,
+    .whoJumbotron h2,
+      .teamHeading h2,
+    .discoutJumbotron h2,
+    .blogJumbotron h2 ,
+    .fa-telegram {
+        font-size: 3rem;
+
+    }
+
+ 
+    .visionText h2,
+    .missionHeading h2,
+    .serviceHeading h2,
+    .whoHeading h2,
+    .clientHead h2,
+    .teamHead h2,
+    .blogHead h2
+    {
+        font-size: 2.5rem;
+
+    }
+
+    .serviceCardss {
+        gap: 2rem;
+    }
+
+    .visionJumbotron,
+    .mission,
+
+    .serviceCardss,
+    .whoHeading h2,
+    .whoJumbotron h3,
+    .whoJumbotron p,
+    .whoImage img,
+    .contactOnline p,
+    .ourServices,
+    .company ul {
+        margin: 1rem 0;
+    }
+
+    .whoJumbotron h3,
+    .discoutJumbotron p,
+    .trainingJumbotron p,
+    .ourServices h4,
+    .company h4,
+    .getInTouch h4 {
+        font-size: 2rem;
+    }
+
+    .clientImage img {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .img1 {
+
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .img2 {
+
+        margin: 0rem;
+        padding: 0rem;
+    }
+
+    .img4 {
+        padding: 1rem 0 0 3rem;
+    }
+
+    .img3 {
+
+        margin: 5rem 0 0 0;
+        padding: 0rem;
+    }
+
+    .discount {
+        margin: 0 2rem;
+        border-radius: 2rem;
+
+    }
+
+    .trainingImage {
+        justify-content: center;
+        margin-left: 9rem;
+    }
+
+    .company ul li {
+        margin: 0;
+    }
+
+    .company,
+    .ourServices {
+        align-items: flex-start;
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media(width>=576.2px)and (width<=768px) {
+
+    .grid2,
+    .grid3,
+    .grid31 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid4c,
+    .grid4country,
+    .grid4,
+    .grid4team {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentSpacingnav,
+    .blogJumbotron {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 4rem 4rem;
+    }
+
+    .serviceContainer {
+        padding: 0rem;
+    }
+    .service {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .serviceCard{
+        margin: 0;
+    }
+    .navHeadLogo img,
+    .logo img {
+        height: 7rem;
+    }
+
+    .number,
+    .talk {
+        /* padding: 0.7rem 1rem;
+        width: max-content; */
+        display: none;
+    }
+
+    .number a,
+    .number i,
+    .talk a,
+    .talk i,
+    .box {
+        font-size: 1.2rem;
+
+    }
+
+
+    .heroJumbotron h1,
+    .trainingJumbotron h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+
+    }
+
+    .heroJumbotron p,
+    .visionJumbotron p,
+    .mission p,
+    .whoJumbotron p,
+    .teamHeading p,
+    .blogJumbotron p {
+
+        margin: 3rem 0 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+
+
+    }
+    .visionJumbotron,.mission,.whoContentBody{
+        gap: 0rem;
+    }
+    .heroJumbotron button,
+    .moreButton button,
+    .clientHead h2,
+    .discoutJumbotron,
+    .moreButton2 button,
+    .countryCard,
+    .trainingJumbotron button {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .heroJumbotron button a,
+    .moreButton button a,
+    .moreButton2 button a,
+    .teamCardBody p,
+    .trainingJumbotron button a,
+    .fa-facebook,
+    .fa-instagram,
+    .contactList li a,
+    .adress p,
+    .contactNo p,
+    .mail p {
+
+        font-size: 1.6rem;
+    }
+
+    .heroJumbotron button a i,
+    .moreButton button a i,
+    .moreButton2 button a i,
+    .trainingJumbotron button i {
+        font-size: 0.7rem;
+        padding: 0.4rem;
+
+    }
+    .visionJumbotron h2,
+    .mission h2,
+    .whoJumbotron h2,
+      .teamHeading h2,
+    .discoutJumbotron h2,
+    .blogJumbotron h2 ,
+    .fa-telegram {
+        font-size: 3rem;
+
+    }
+
+ 
+    .visionText h2,
+    .missionHeading h2,
+    .serviceHeading h2,
+    .whoHeading h2,
+    .clientHead h2,
+    .teamHead h2,
+    .blogHead h2
+    {
+        font-size: 2.5rem;
+
+    }
+
+    
+
+    .serviceCardss {
+        gap: 2rem;
+    }
+
+    .teamImages {
+        gap: 3rem;
+    }
+
+    .visionJumbotron,
+    .mission,
+    .serviceCardss,
+    .whoHeading h2,
+    .whoJumbotron h3,
+    .whoJumbotron p,
+    .whoImage img,
+    .contactOnline p,
+    .ourServices,
+    .company ul {
+        margin: 1rem 0;
+    }
+
+    .whoJumbotron h3,
+    .discoutJumbotron p,
+    .trainingJumbotron p,
+    .ourServices h4,
+    .company h4,
+    .getInTouch h4 {
+        font-size: 2rem;
+    }
+
+    .clientImage img {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .img1 {
+
+        margin: 0rem;
+        padding: 0rem;
+        height: 20rem;
+        width: auto;
+        margin: 0 0 0 3rem;
+    }
+
+    .img2 {
+
+        margin: 0rem;
+        padding: 0rem;
+        height: 29rem;
+        width: auto;
+    }
+
+    .img4 {
+        /* padding: 4rem 0 0 3rem; */
+        height: 25rem;
+        width: auto;
+
+    }
+
+    .img3 {
+
+        /* margin: 5rem 3rem 3rem 3rem; */
+        /* padding: 0rem; */
+        height: 25rem;
+        width: auto;
+    }
+
+    .discount {
+        margin: 0 2rem;
+        border-radius: 2rem;
+
+    }
+
+    .trainingImage {
+        justify-content: center;
+        margin-left: 9rem;
+    }
+
+    .company ul li {
+        margin: 0;
+    }
+
+    .company {
+        align-items: flex-start;
+        margin-bottom: 10.899rem
+    }
+
+    .getInTouch {
+        margin: 4rem 0 0 7rem;
+    }
+
+}
+@media(width>=768.2px)and (width<=992px) {
+
+  
+   
+    .grid31 {
+        grid-template-columns: 1fr;
+    }
+
+ .grid4c,
+    .grid4, .grid3,
+    .grid4team {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .align {
+
+        padding: 0 2rem;
+    }
+
+    .componentSpacingnav,
+    .blogJumbotron {
+        padding: 1rem 0;
+    }
+
+    .componentSpacing {
+        padding: 4rem 4rem;
+    }
+
+    .serviceContainer {
+        padding: 0rem;
+    }
+    .service {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .serviceCard{
+        margin: 0;
+    }
+    .navHeadLogo img,
+    .logo img {
+        height: 7rem;
+    }
+
+    .number,
+    .talk {
+        /* padding: 0.7rem 1rem;
+        width: max-content; */
+        /* display: none; */
+    }
+
+    .number a,
+    .number i,
+    .talk a,
+    .talk i,
+    .box {
+        font-size: 1.2rem;
+
+    }
+
+
+    .heroJumbotron h1,
+    .trainingJumbotron h2 {
+        font-size: 5rem;
+        line-height: 5rem;
+
+    }
+
+    .heroJumbotron p,
+    .visionJumbotron p,
+    .mission p,
+    .whoJumbotron p,
+    .teamHeading p,
+    .blogJumbotron p {
+
+        margin: 3rem 0 4rem;
+        font-size: 2rem;
+        line-height: 3rem;
+
+
+    }
+    .visionJumbotron,.mission,.whoContentBody{
+        gap: 0rem;
+    }
+    .heroJumbotron button,
+    .moreButton button,
+    .clientHead h2,
+    .discoutJumbotron,
+    .moreButton2 button,
+    .countryCard,
+    .trainingJumbotron button {
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .heroJumbotron button a,
+    .moreButton button a,
+    .moreButton2 button a,
+    .teamCardBody p,
+    .trainingJumbotron button a,
+    .fa-facebook,
+    .fa-instagram,
+    .contactList li a,
+    .adress p,
+    .contactNo p,
+    .mail p {
+
+        font-size: 1.6rem;
+    }
+
+    .heroJumbotron button a i,
+    .moreButton button a i,
+    .moreButton2 button a i,
+    .trainingJumbotron button i {
+        font-size: 0.7rem;
+        padding: 0.4rem;
+
+    }
+
+    .visionJumbotron h2,
+    .mission h2,
+    .whoJumbotron h2,
+      .teamHeading h2,
+    .discoutJumbotron h2,
+    .blogJumbotron h2 ,
+    .fa-telegram {
+        font-size: 3rem;
+
+    }
+
+ 
+    .visionText h2,
+    .missionHeading h2,
+    .serviceHeading h2,
+    .whoHeading h2,
+    .clientHead h2,
+    .teamHead h2,
+    .blogHead h2
+    {
+        font-size: 2.5rem;
+
+    }
+
+
+    .serviceCardss {
+        gap: 2rem;
+    }
+
+    .teamImages {
+        gap: 3rem;
+    }
+
+    .visionJumbotron,
+    .mission,
+    .serviceCardss,
+    .whoHeading h2,
+    .whoJumbotron h3,
+    .whoJumbotron p,
+    .whoImage img,
+    .contactOnline p,
+    .ourServices,
+    .company ul {
+        margin: 1rem 0;
+    }
+
+    .whoJumbotron h3,
+    .discoutJumbotron p,
+    .trainingJumbotron p,
+    .ourServices h4,
+    .company h4,
+    .getInTouch h4 {
+        font-size: 2rem;
+    }
+
+    .clientImage img {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 2rem;
+
+    }
+
+    .img1 {
+
+        margin: 0rem;
+        padding: 0rem;
+        height: 20rem;
+        width: auto;
+        margin: 0 0 0 3rem;
+    }
+
+    .img2 {
+
+        margin: 0rem;
+        padding: 0rem;
+        height: 29rem;
+        width: auto;
+    }
+
+    .img4 {
+        /* padding: 4rem 0 0 3rem; */
+        height: 25rem;
+        width: auto;
+
+    }
+
+    .img3 {
+
+        /* margin: 5rem 3rem 3rem 3rem; */
+        /* padding: 0rem; */
+        height: 25rem;
+        width: auto;
+    }
+
+    .discount {
+        margin: 0 2rem;
+        border-radius: 2rem;
+
+    }
+
+    .trainingImage {
+        justify-content: center;
+        margin-left: 9rem;
+    }
+
+    .company ul li {
+        margin: 0;
+    }
+
+    .company {
+        align-items: flex-start;
+        margin-bottom: 10.899rem
+    }
+
+    .getInTouch {
+        margin: 4rem 0 0 12.7rem;
+    }
+}
